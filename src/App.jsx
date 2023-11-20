@@ -20,7 +20,7 @@ import { AdministrarProductos } from "./components/AdministrarProductos";
 
 function App() {
 
-  const socket = io('http://localhost:5000')
+  const socket = io('https://agricoin-server-c33a3051d286.herokuapp.com')
   const [usuarios , setUsuarios] = useState([])
 
   const [sectores,setSectores] = useState([])
