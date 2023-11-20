@@ -141,7 +141,9 @@ export function Conversiones({socket,productos,agricoins,usuarios,conversiones})
                 {conversiones.map(convercion =>{
                     console.log(convercion)
                     const producto = productos.find(producto => producto.idproducto == convercion.idproducto)
-                    return <ConverRow setConverSelected={setConverSelected} converSelected={converSelected} producto={producto} conversion={convercion}/>
+                    if(producto.nombre != 'Agricoin'){
+                        return <ConverRow setConverSelected={setConverSelected} converSelected={converSelected} producto={producto} conversion={convercion}/>
+                    }
                 })}
             </tbody>
         </table>
