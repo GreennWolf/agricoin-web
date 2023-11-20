@@ -1,0 +1,141 @@
+.inactive{
+    display: none;
+}
+
+.options{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option{
+    width: calc(100% / 3.5);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C8F72;
+    color: white;
+    cursor: pointer;
+}
+
+.optionI{
+    width: calc(100% / 5.5);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C8F72;
+    color: white;
+    cursor: pointer;
+}
+
+.option:hover , .optionI:hover{
+    background-color: #204f3e;
+}
+
+.modal-conversiones{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;    
+    position: absolute;
+    top: 0;
+    align-items: center;
+}
+
+.modal-content{
+    margin-top: 100px;
+    position: relative;
+    width: 60%;
+    height: 50%;
+    background-color: #3C8F72;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.modal-form{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-form .close{
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.modal-form .close:hover{
+    color: red;
+}
+
+.modal-form label{
+    margin-top: 15px;
+    margin-bottom:15px ;
+    font-size: 30px;
+    color: white;
+}
+
+.modal-form select{
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-form input{
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal-form input::placeholder{
+    text-align: center;
+}
+
+.modal-form .submit{
+    width: 60%;
+    height: 30px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.table-conversiones{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table-conversiones th{
+
+    font-size: 25px;
+    background-color: #3C8F72;
+    color: white;
+}
+
+.table-conversiones tr{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    background-color: rgb(39, 205, 39);
+    cursor:pointer;
+}
+
+.table-conversiones tbody tr:hover{
+    background-color: grey;
+}
+
+.selected{ 
+    background-color:gold !important;
+}
+
